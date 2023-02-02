@@ -27,15 +27,18 @@ export const Register = (props) => {
     }
 
     return (
-        <div className="bg-success-subtle d-flex align-items-center flex-column min-vh-100">
-            <h2>Register</h2>
-            <form className="d-flex flex-column p-5 border border-white ml-0 mr-0 mt-2 bg-white" onSubmit={handleSubmit}>
+        <div className="bg-success-subtle d-flex align-items-center flex-column min-vh-100 p-5">
+            <h2>Register</h2> 
+            <form className="w-25 d-flex flex-column p-5 border border-white ml-0 mr-0 mt-2 bg-white mt-3 rounded" onSubmit={handleSubmit}>
                 <label className="form-label">Full name</label>
-                <input name="name" id="name" placeholder="full name" />
+                <input className="border border-secondary rounded p-2"
+                    name="name" id="name" placeholder="full name" />
                 <label className="form-label">email</label>
-                <input type="email" placeholder="youremail@gmail.com" name="email" />
+                <input className="border border-secondary rounded p-2"
+                    type="email" placeholder="youremail@gmail.com" name="email" />
                 <label className="form-label">password</label>
-                <input type="password" placeholder="***********" id="password" name="password" />
+                <input className="border border-secondary rounded p-2"
+                    type="password" placeholder="***********" id="password" name="password" />
                 <button className="text-capitalize btn btn-success ml-0 mr-0 mt-2"
                     type="submit ">Register</button>
             </form>

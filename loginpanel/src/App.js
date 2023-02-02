@@ -18,7 +18,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={
-          <div className="bg-success-subtle d-flex p-2 align-items-center justify-content-center text-center">
+          <div >
            <Register/>
           </div>}/>
           <Route path="/login" element={<Login />} />
