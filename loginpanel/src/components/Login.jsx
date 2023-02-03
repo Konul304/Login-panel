@@ -10,7 +10,6 @@ export const Login = (props) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(user.email)
     }
 
     const handleChange = (e) => {

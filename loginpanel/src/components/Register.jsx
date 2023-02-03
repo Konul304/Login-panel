@@ -10,10 +10,9 @@ export const Register = (props) => {
         password: "",
     });
 
-
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (user.name !== '' && user.email !== '' && user.password !== '') {
+        if (user.name !=="" && user.email !== "" && user.password !== "") {
             return props.onFormSwitch('login');
         }
     }
@@ -28,7 +27,7 @@ export const Register = (props) => {
                 <div className="row justify-content-center">
                     <div className="col-md-4">
                         <div className="card">
-                            <h4 className="card-header">Register</h4>
+                            <h4 className="card-header text-center">Register</h4>
                             <div className="card-body">
                                 <form onSubmit={handleSubmit}>
 
@@ -39,7 +38,6 @@ export const Register = (props) => {
                                         </div>
                                     </div>
 
-
                                     <div className="form-group row">
                                         <label className="col-md-6 col-form-label text-md-right mb-2">E-mail Address</label>
                                         <div className="col-md-6">
@@ -48,7 +46,7 @@ export const Register = (props) => {
                                     </div>
 
                                     <div className="form-group row">
-                                        <label for="password" className="col-md-6 col-form-label text-md-right mb-4">Password</label>
+                                        <label className="col-md-6 col-form-label text-md-right mb-4">Password</label>
                                         <div className="col-md-6">
                                             <input onChange={handleChange} type="password" className="form-control" name="password" required />
                                         </div>
