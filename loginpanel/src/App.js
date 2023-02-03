@@ -18,11 +18,10 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={
-          <div >
-           <Register/>
-          </div>}/>
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
+           <Register onFormSwitch={toggleForm}/>
+          }/>
+          <Route path="/login" element={<Login onFormSwitch={toggleForm}/>} />
+          <Route path="/register" element={<Register onFormSwitch={toggleForm}/>} />
       </Routes>
     </BrowserRouter>
   );
