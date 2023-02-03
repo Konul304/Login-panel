@@ -32,14 +32,14 @@ export const Register = (props) => {
             <form className="w-25 d-flex flex-column p-5 border border-white ml-0 mr-0 mt-2 bg-white mt-3 rounded" onSubmit={handleSubmit}>
                 <label className="form-label">Full name</label>
                 <input className="border border-secondary rounded p-2"
-                    name="name" id="name" placeholder="full name" />
-                <label className="form-label">email</label>
+                    name="name" id="name" placeholder="Full name" />
+                <label className="form-label">Email</label>
                 <input className="border border-secondary rounded p-2"
                     type="email" placeholder="youremail@gmail.com" name="email" />
-                <label className="form-label">password</label>
+                <label className="form-label">Password</label>
                 <input className="border border-secondary rounded p-2"
                     type="password" placeholder="***********" id="password" name="password" />
-                <button className="text-capitalize btn btn-success ml-0 mr-0 mt-2"
+                <button className="text-capitalize btn btn-success ml-0 mr-0 mt-3"
                     type="submit ">Register</button>
             </form>
             <Link to="/login"><button className="btn ml-0 mr-0 mt-2" onClick={() => {
